@@ -111,7 +111,6 @@ def index():
             <div id="postResponse" class="response" style="display: none;"></div>
         </div>
 
-        <!-- Кнопки для получения отзывов по настроению -->
         <div style="margin-top: 20px;">
             <h2>Просмотр отзывов по настроению</h2>
             <button id="getNegativeReviews" class="negative-btn">Негативные</button>
@@ -145,7 +144,6 @@ def index():
             }
         });
 
-        // Отправка GET-запросов для разных настроений
         async function loadReviews(sentiment, responseDiv) {
             responseDiv.style.display = 'block';
             responseDiv.className = 'response';
